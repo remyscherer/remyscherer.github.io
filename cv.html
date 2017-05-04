@@ -1,41 +1,78 @@
 <style>
+:root {
+  --hauptfarbe: #01baf0;
+  --hauptfarbe2: #057dcb;
+  --hauptfarbe3: #1e2834;
+  --grey: #e5e5e5;
+}
 html{
-    font-family: "Tahoma", Geneva, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 body{
-    background-color: #b4b5b7;    
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+0,e3eaed+37,c8d7dc+100;Grey+3D+%234 */
+background: #f2f5f6; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
 }
 h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
+    font-size: 200%;
 }
-h2{
+h2.article{
     margin-top: 0;
-    background-color: #e5e5e5;
+    background-color: var(--grey);
     padding-right: 10%;
+    text-transform: uppercase;
+    font-size: 95%;
+}
+hr{
+     border-color: var(--hauptfarbe);
+    background-color: var(--hauptfarbe);
+    border-width: 1px;
+    border-style: solid;
+}
+hr.nospace{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #mainwindow{
     background-color: #FFFFFF;
     width: 60%;
-    height: 500px;
+    height: 100%;
     margin: 5% auto 0 auto;
 }
 #leftwindow{
     float:left;
     width: 70%;
-    height: 100%;
-    background-color: #fff;
     text-align: right;
 }
-#leftwindow>div>*{
+#leftwindow>div{
     padding-right: 10%;
 }
-#leftwindow>div>h2#blue{
-    color: #01baf0;
-    padding-top: 0px;
-    background-color: transparent;
-        text-transform: uppercase;
+.job{
+    text-transform: uppercase;
+}
+.fcolor1{
+    color: var(--hauptfarbe);  
+}
+.bgcolor1{
+    background-color: var(--hauptfarbe);
+}
+.fcolor2{
+    color: var(--hauptfarbe2);
+}
+.bgcolor2{
+    background-color: var(--hauptfarbe2);
+}
+.fcolor3{
+    color: var(--hauptfarbe3);
+}
+.bgcolor3{
+    background-color: var(--hauptfarbe3);
 }
 #leftwindow>#Name>h1{
     padding-top: 10%;
@@ -44,23 +81,48 @@ h2{
     float:right;
     width: 30%;
     height: 100%;
-    background-color: #e5e5e5;
     box-shadow: -10px 0 10px #b4b5b7;
 }
-#rightwindow>#photo>img{
+#rightwindow>img{
     width: 100%;
 }
+.contact{
+    height: 10%;
+    color: #fff;
+}
+.phone{
+    background-color: var(--hauptfarbe3);
+}
+.website{
+    background-color: var(--hauptfarbe2);
+}
+.email{
+    background-color: var(--hauptfarbe);
+}
+.con{
+    background-color: var(--grey);
+    text-transform: uppercase;
+    height: 100px;
+}
 </style>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+</head>
 <body>
-<div>
 <div id='mainwindow'>
     <div id='leftwindow'>
         <div id="Name">
-        <h1>Remy Scherer</h1>
-        <h2 id="blue">Developer</h2>
+            <h1>Remy Scherer</h1>
+            <h2 class="job fcolor1">Developer</h2>
+            Some other text about me...
         </div>
-        
-        <h2>Education</h2>
+        <hr/>
+        <h2 class="article">Personal Information</h2>
+        <div>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+        <hr/>
+        <h2 class="article">Education</h2>
         <div>
         <ul>
             <li>Grundschule</li>
@@ -68,12 +130,41 @@ h2{
             <li>Universit&auml;t Heidelberg</li>
         </ul>
         </div>
-    </div>
-    <div id='rightwindow'>
-        <div id='photo'>
-            <img src='https://avatars1.githubusercontent.com/u/27846555'/>
+        <hr/>
+        <h2 class="article">Work Experience</h2>
+        <div class="jobs">
+            <div>
+                <span class="jobcompany">Hi-Tech LTD.</span>
+                <span class="jobjob">Graphic Designer</span>
+                <span class="jobtime">03 Feb 2010 - 10 Oct 2014</span>
+                <span class="jobtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
+            </div>
         </div>
     </div>
-</div>
+    
+    <div id='rightwindow'>
+        <img src='https://avatars1.githubusercontent.com/u/27846555'/>
+        <div class="contact phone"> 
+                0176 XXXXXXX
+        </div>
+        <div class="contact website">
+                remyscherer.github.io
+        </div>
+        
+        <div class="contact email">
+                remy@scherer.de
+        </div>
+        <div class="con">
+            Skills
+        </div>
+        <hr class='nospace'/>
+        <div class="con">
+            Hobbies
+        </div>
+        <hr class='nospace'/>
+        <div class="con">
+            Company Contact
+        </div>
+    </div>
 </div>
 </body>
