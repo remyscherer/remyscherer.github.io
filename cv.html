@@ -24,7 +24,7 @@ background: #f2f5f6; /* Old browsers */
 background: -moz-radial-gradient(center, ellipse cover, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6-15 */
 background: -webkit-radial-gradient(center, ellipse cover, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10-25,Safari5.1-6 */
 background: radial-gradient(ellipse at center, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 h1 {
     margin-top: 0;
@@ -32,12 +32,15 @@ h1 {
     text-transform: uppercase;
     font-size: 200%;
 }
+h3.job {
+  margin-top: 0;
+}
 h2.article{
     margin-top: 0;
     background-color: var(--grey);
     padding-right: 10%;
     text-transform: uppercase;
-    font-size: 95%;
+    font-size: 100%;
 }
 hr{
     border-color: var(--hauptfarbe);
@@ -56,7 +59,7 @@ hr{
     //background-color: var(--grey);
 }
 #middle{
-    
+
 }
 #leftwindow{
     background-color: #FFFFFF;
@@ -72,7 +75,7 @@ hr{
     text-transform: uppercase;
 }
 .fcolor1{
-    color: var(--hauptfarbe);  
+    color: var(--hauptfarbe);
 }
 .bgcolor1{
     background-color: var(--hauptfarbe);
@@ -98,6 +101,9 @@ hr{
     width: 30%;
     height: 100%;
     box-shadow: -10px 0 50px #b4b5b7;
+}
+#rightwindow>div{
+    padding-left: 10%;
 }
 #rightwindow>img{
     width: 100%;
@@ -136,7 +142,7 @@ hr{
         <div id='leftwindow'>
             <div id="Name">
                 <h1>Remy Scherer</h1>
-                <h2 class="job fcolor1">Developer</h2>
+                <h3 class="job fcolor1">Developer</h3>
                 Some other text about me...
             </div>
             <hr/>
@@ -166,20 +172,20 @@ hr{
         </div>
         <div id='rightwindow'>
             <img src='https://avatars1.githubusercontent.com/u/27846555'/>
-            <div class="contact phone"> 
+            <div class="contact phone">
                     0176 XXXXXXX
             </div>
             <div class="contact website">
                     remyscherer.github.io
             </div>
-            
+
             <div class="contact email">
                     remy@scherer.de
             </div>
             <div class="con">
                 Skills  <br /><br />
                 <div class="skill">
-                <div style="float:left;">HTML</div>            
+                <div style="float:left;">HTML</div>
                         <div class="progress">
                           <div class="progress-bar" role="progressbar" style="width:60%">
                           </div>
@@ -197,7 +203,7 @@ hr{
         </div>
     </div>
     <div id="footer">
-        © by Remy Scherer 2017
+        Â© by Remy Scherer 2017
     </div>
 </div>
 </body>
