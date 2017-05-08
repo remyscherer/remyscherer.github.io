@@ -1,3 +1,13 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
 <style>
 :root {
   --hauptfarbe: #01baf0;
@@ -30,22 +40,27 @@ h2.article{
     font-size: 95%;
 }
 hr{
-     border-color: var(--hauptfarbe);
+    border-color: var(--hauptfarbe);
     background-color: var(--hauptfarbe);
     border-width: 1px;
     border-style: solid;
 }
-hr.nospace{
+/*hr.nospace{
     margin-top: 0;
     margin-bottom: 0;
-}
+}*/
 #mainwindow{
-    background-color: #FFFFFF;
     width: 60%;
-    height: 100%;
+    height: auto;
     margin: 5% auto 0 auto;
+    //background-color: var(--grey);
+}
+#middle{
+    
 }
 #leftwindow{
+    background-color: #FFFFFF;
+    display: inline-block;
     float:left;
     width: 70%;
     text-align: right;
@@ -78,13 +93,21 @@ hr.nospace{
     padding-top: 10%;
 }
 #rightwindow{
-    float:right;
+    display: inline-block;
+    float:left;
     width: 30%;
     height: 100%;
-    box-shadow: -10px 0 10px #b4b5b7;
+    box-shadow: -10px 0 50px #b4b5b7;
 }
 #rightwindow>img{
     width: 100%;
+    display:block;
+}
+#footer{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    background-color: var(--hauptfarbe3);
 }
 .contact{
     height: 10%;
@@ -100,71 +123,81 @@ hr.nospace{
     background-color: var(--hauptfarbe);
 }
 .con{
-    background-color: var(--grey);
     text-transform: uppercase;
-    height: 100px;
+}
+.progress{
+    margin-left: 20%;
+    margin-right: 10%;
 }
 </style>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
-</head>
 <body>
 <div id='mainwindow'>
-    <div id='leftwindow'>
-        <div id="Name">
-            <h1>Remy Scherer</h1>
-            <h2 class="job fcolor1">Developer</h2>
-            Some other text about me...
-        </div>
-        <hr/>
-        <h2 class="article">Personal Information</h2>
-        <div>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </div>
-        <hr/>
-        <h2 class="article">Education</h2>
-        <div>
-        <ul>
-            <li>Grundschule</li>
-            <li>Gymnasium</li>
-            <li>Universit&auml;t Heidelberg</li>
-        </ul>
-        </div>
-        <hr/>
-        <h2 class="article">Work Experience</h2>
-        <div class="jobs">
+    <div>
+        <div id='leftwindow'>
+            <div id="Name">
+                <h1>Remy Scherer</h1>
+                <h2 class="job fcolor1">Developer</h2>
+                Some other text about me...
+            </div>
+            <hr/>
+            <h2 class="article">Personal Information</h2>
             <div>
-                <span class="jobcompany">Hi-Tech LTD.</span>
-                <span class="jobjob">Graphic Designer</span>
-                <span class="jobtime">03 Feb 2010 - 10 Oct 2014</span>
-                <span class="jobtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+            <hr/>
+            <h2 class="article">Education</h2>
+            <div>
+            <ul>
+                <li>Grundschule</li>
+                <li>Gymnasium</li>
+                <li>Universit&auml;t Heidelberg</li>
+            </ul>
+            </div>
+            <hr/>
+            <h2 class="article">Work Experience</h2>
+            <div class="jobs">
+                <div>
+                    <span class="jobcompany">Hi-Tech LTD.</span>
+                    <span class="jobjob">Graphic Designer</span>
+                    <span class="jobtime">03 Feb 2010 - 10 Oct 2014</span>
+                    <span class="jobtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
+                </div>
+            </div>
+        </div>
+        <div id='rightwindow'>
+            <img src='https://avatars1.githubusercontent.com/u/27846555'/>
+            <div class="contact phone"> 
+                    0176 XXXXXXX
+            </div>
+            <div class="contact website">
+                    remyscherer.github.io
+            </div>
+            
+            <div class="contact email">
+                    remy@scherer.de
+            </div>
+            <div class="con">
+                Skills  <br /><br />
+                <div class="skill">
+                <div style="float:left;">HTML</div>            
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width:60%">
+                          </div>
+                        </div>
+                </div>
+            </div>
+            <hr class='nospace'/>
+            <div class="con">
+                Hobbies
+            </div>
+            <hr class='nospace'/>
+            <div class="con">
+                Company Contact
             </div>
         </div>
     </div>
-    
-    <div id='rightwindow'>
-        <img src='https://avatars1.githubusercontent.com/u/27846555'/>
-        <div class="contact phone"> 
-                0176 XXXXXXX
-        </div>
-        <div class="contact website">
-                remyscherer.github.io
-        </div>
-        
-        <div class="contact email">
-                remy@scherer.de
-        </div>
-        <div class="con">
-            Skills
-        </div>
-        <hr class='nospace'/>
-        <div class="con">
-            Hobbies
-        </div>
-        <hr class='nospace'/>
-        <div class="con">
-            Company Contact
-        </div>
+    <div id="footer">
+        © by Remy Scherer 2017
     </div>
 </div>
 </body>
