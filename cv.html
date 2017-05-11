@@ -11,13 +11,6 @@
 <script src="https://use.fontawesome.com/1a6a79c267.js"></script>
 </head>
 <style>
-@media (max-width: @screen-xs) {
-    body{color: green;}
-}
-
-@media (max-width: @screen-sm) {
-    body{color: white;}
-}
 :root {
   --hauptfarbe: #01baf0;
   --hauptfarbe2: #057dcb;
@@ -56,11 +49,10 @@ h3.job {
 h2.article{
     margin-top: 0;
     background-color: var(--grey);
-    
-    padding: 1%;
-    padding-right: 10%;
+    font-size: 2vw;    
+    padding: 1vw;
+    padding-right: 5vw;
     text-transform: uppercase;
-    font-size: 130%;
     font-weight: bold;
 }
 hr{
@@ -69,25 +61,22 @@ hr{
     border-width: 1px;
     border-style: solid;
 }
-/*hr.nospace{
-    margin-top: 0;
-    margin-bottom: 0;
-}*/
 #mainwindow{
-    width: 60%;
+    width: 60vw;
     height: auto;
-    margin: 10% auto 10% auto;
+    margin: 10vw auto 10vw auto;
     background-color: white;
+    font-size: 1.5vw;
 }
 #leftwindow{
     background-color: #FFFFFF;
     display: inline-block;
     float:left;
-    width: 70%;
+    width: 42vw;
     text-align: right;
 }
 #leftwindow>div{
-    padding-right: 10%;
+    padding: 0 3vw;
 }
 .job{
     text-transform: uppercase;
@@ -110,19 +99,20 @@ hr{
 .bgcolor3{
     background-color: var(--hauptfarbe3);
 }
+#leftwindow>#Name{
+    font-size: 1.5vw;
+}
 #leftwindow>#Name>h1{
-    padding-top: 20%;
+    padding-top: 10vw; 
     font-weight: bold;
 }
 #rightwindow{
     display: inline-block;
+    display: block;
     background-color: var(--grey);
     float:left;
-    width: 30%;
-    box-shadow: -10px 0 50px #b4b5b7;
-}
-#rightwindow>div{
-    //padding-left: 10%;
+    width: 18vw;
+    box-shadow: -1vw 0 5vw #b4b5b7;
 }
 #rightwindow>img{
     width: 100%;
@@ -130,13 +120,14 @@ hr{
 }
 #footer{
     display: inline-block;
-    width: 100%;
+    width: 60vw;
     text-align:center;
     color: white;
     background-color: var(--hauptfarbe3);
 }
 .contact{
-    height: 10%;
+    height: 5vw;
+    font-size: 1vw;
 }
 .contact>span{
     float:left;
@@ -146,19 +137,28 @@ hr{
     margin-left: 10%;
 }
 .contactform{  
-    margin-left: 5%;    
-    vertical-align: center;
-    color: black;    
+    float: left; 
+    color: black; 
+    height: 5vw;
+    width: 3.5vw;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-shadow: inset -1vw 0vw 1vw 0vw rgba(0,0,0,0.5);
+    -moz-box-shadow: inset -1vw 0vw 1vw 0vw rgba(0,0,0,0.5);
+    box-shadow: inset -1vw 0vw 1vw 0vw rgba(0,0,0,0.5);
 }
 .contactform>i{
-    float: left;
-    background: #fff;
+    /*background: #fff;    
     height:2.5vw;
-    width: 2.5vw;
-    font-size: 1vw;
+    width: 2.5vw; 
     border-radius: 50%;
-    padding: 5%;
-    margin-top: 5%;
+    padding: 5px;*/
+    
+    padding-top: 1.5vw;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 2vw;
 }
 .phone{
     background-color: var(--hauptfarbe3);
@@ -175,6 +175,7 @@ hr{
 .con{
     text-transform: uppercase;
     margin: 10% auto 10% auto;
+    padding-left: 10%;
 }
 .progress{
     margin-left: 20%;
