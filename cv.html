@@ -11,6 +11,13 @@
 <script src="https://use.fontawesome.com/1a6a79c267.js"></script>
 </head>
 <style>
+@media (max-width: @screen-xs) {
+    body{color: green;}
+}
+
+@media (max-width: @screen-sm) {
+    body{color: white;}
+}
 :root {
   --hauptfarbe: #01baf0;
   --hauptfarbe2: #057dcb;
@@ -30,28 +37,31 @@ html{
     font-family: "Montserrat", sans-serif;
 }
 body{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+0,e3eaed+37,c8d7dc+100;Grey+3D+%234 */
-background: #f2f5f6; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.35) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.35) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 200%;
+    font-size: 3vw;
 }
 h3.job {
   margin-top: 0;
+  font-size: 2.5vw;
 }
 h2.article{
     margin-top: 0;
     background-color: var(--grey);
+    
+    padding: 1%;
     padding-right: 10%;
     text-transform: uppercase;
-    font-size: 100%;
+    font-size: 130%;
+    font-weight: bold;
 }
 hr{
     border-color: var(--hauptfarbe);
@@ -66,11 +76,8 @@ hr{
 #mainwindow{
     width: 60%;
     height: auto;
-    margin: 5% auto 5% auto;
+    margin: 10% auto 10% auto;
     background-color: white;
-}
-#middle{
-
 }
 #leftwindow{
     background-color: #FFFFFF;
@@ -104,7 +111,8 @@ hr{
     background-color: var(--hauptfarbe3);
 }
 #leftwindow>#Name>h1{
-    padding-top: 10%;
+    padding-top: 20%;
+    font-weight: bold;
 }
 #rightwindow{
     display: inline-block;
@@ -130,7 +138,7 @@ hr{
 .contact{
     height: 10%;
 }
-.contactform>span{
+.contact>span{
     float:left;
     text-align: center;
     color: #fff;
@@ -212,21 +220,21 @@ hr{
             <div class="contact phone">
                 <div class="contactform">
                     <i class='fa fa-phone' aria-hidden='true'></i>
-                    <span>0176 XXXXXXX</span>
                 </div>
+                <span>0176 XXXXXXX</span>
             </div>
             <div class="contact website">
                 <div class="contactform">
                    <i class='fa fa-globe' aria-hidden='true'></i>
-                    <span>remyscherer.github.io</span>
                 </div>
+                <span>remyscherer.github.io</span>
             </div>
 
             <div class="contact email">
                 <div class="contactform">
                     <i class='fa fa-envelope-o' aria-hidden='true'></i>
-                    <span>remy@scherer.de</span>
                 </div>
+                <span>remy@scherer.de</span>
             </div>
             <div class="con">
                 Skills  <br /><br />
