@@ -8,6 +8,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel='stylesheet' href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css"/>
+<script src="https://use.fontawesome.com/1a6a79c267.js"></script>
 </head>
 <style>
 :root {
@@ -137,7 +138,7 @@ hr{
     background-color: var(--hauptfarbe3);
 }
 .phone:before{
-    content: "ICON";
+    content: "";
 }
 .website{
     background-color: var(--hauptfarbe2);
@@ -191,13 +192,16 @@ hr{
         <div id='rightwindow'>
             <img src='https://avatars1.githubusercontent.com/u/27846555'/>
             <div class="contact phone">
+                    <i class='fa fa-phone' aria-hidden='true'></i>
                     0176 XXXXXXX
             </div>
             <div class="contact website">
+                    <i class='fa fa-globe' aria-hidden='true'></i>
                     remyscherer.github.io
             </div>
 
             <div class="contact email">
+                    <i class='fa fa-envelope-o' aria-hidden='true'></i>
                     remy@scherer.de
             </div>
             <div class="con">
@@ -235,7 +239,7 @@ hr{
         </div>
     </div>
     <div id="footer">
-        © by Remy Scherer 2017
+        <i class="fa fa-copyright" aria-hidden="true"></i> by Remy Scherer 2017
     </div>
 </div>
 </body>
