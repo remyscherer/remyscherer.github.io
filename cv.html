@@ -129,10 +129,28 @@ hr{
 }
 .contact{
     height: 10%;
-    padding: 5% auto 5% auto;
+}
+.contactform>span{
+    float:left;
     text-align: center;
-    padding-top: 10%;
     color: #fff;
+    padding-top: 10%;
+    margin-left: 10%;
+}
+.contactform{  
+    margin-left: 5%;    
+    vertical-align: center;
+    color: black;    
+}
+.contactform>i{
+    float: left;
+    background: #fff;
+    height:2.5vw;
+    width: 2.5vw;
+    font-size: 1vw;
+    border-radius: 50%;
+    padding: 5%;
+    margin-top: 5%;
 }
 .phone{
     background-color: var(--hauptfarbe3);
@@ -192,17 +210,23 @@ hr{
         <div id='rightwindow'>
             <img src='https://avatars1.githubusercontent.com/u/27846555'/>
             <div class="contact phone">
+                <div class="contactform">
                     <i class='fa fa-phone' aria-hidden='true'></i>
-                    0176 XXXXXXX
+                    <span>0176 XXXXXXX</span>
+                </div>
             </div>
             <div class="contact website">
-                    <i class='fa fa-globe' aria-hidden='true'></i>
-                    remyscherer.github.io
+                <div class="contactform">
+                   <i class='fa fa-globe' aria-hidden='true'></i>
+                    <span>remyscherer.github.io</span>
+                </div>
             </div>
 
             <div class="contact email">
+                <div class="contactform">
                     <i class='fa fa-envelope-o' aria-hidden='true'></i>
-                    remy@scherer.de
+                    <span>remy@scherer.de</span>
+                </div>
             </div>
             <div class="con">
                 Skills  <br /><br />
